@@ -1,1 +1,48 @@
+img {
+  display: block;
+  max-width:50%;
+  height:auto;
+  margin: auto;
+}
 
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2vw;
+}
+
+button {
+    margin-top: 2vw;
+}
+
+p {
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: auto;
+    width: 20vw;
+}
+
+label {
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 1vw;
+}
+
+#output {
+    display:none;
+    margin: 1vw;
+    
+}
+
+#tryAgain {
+    display: none;
+    width: 7vw; 
+    height: 2vw; 
+    font-size: 1.2vw
+}
