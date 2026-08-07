@@ -75,7 +75,7 @@ function printArray() {
 }
 	currentFrame = frames.pop();
 	document.getElementById("output").textContent = currentFrame.id
-	document.getElementById("imageOutput").src = "frames\\" + currentFrame.file
+	document.getElementById("imageOutput").src = "frames/" + currentFrame.file
 }
 
 function refreshArray() {
