@@ -5,11 +5,82 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Space Dandy Guesser</title>
 		<link rel="icon" type="icon" href="icon.png" />
-
-		<scrip src="script.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
 	</head>
+
 	<body>
-		<p style="text-align: center" id="test">hello</p>
-		<button onclick="testfunction()">testing</button>
+		<div></div>
+		<img id="imageOutput" src="" />
+		<!--
+		<div></div>
+		<div>
+			<button onclick="printArray()">Print Array</button> <br />
+			<button onclick="refreshArray()">Refresh Array</button> <br />
+			<button onclick="shuffleArray()">Shuffle Array</button> <br />
+		</div>
+		-->
+		<p id="output">output</p>
+
+		<label id="label" for="guess">Your Guess:</label>
+
+		<input list="episodes" id="guess" name="guess" />
+
+		<datalist id="episodes">
+			<option value="S1E1 - Live with the Flow, Baby"></option>
+			<option
+				value="S1E2 - The Search for the Phantom Space Ramen, Baby"
+			></option>
+			<option
+				value="S1E3 - Occasionally Even the Deceiver Is Deceived, Baby"
+			></option>
+			<option value="S1E4 - Sometimes You Can't Live with Dying, Baby"></option>
+			<option
+				value="S1E5 - A Merry Companion Is a Wagon in Space, Baby"
+			></option>
+			<option value="S1E6 - The War of the Undies and Vests, Baby"></option>
+			<option value="S1E7 - A Race in Space Is Dangerous, Baby"></option>
+			<option value="S1E8 - The Lonely Pooch Planet, Baby"></option>
+			<option value="S1E9 - Plants Are Living Things, Too, Baby"></option>
+			<option value="S1E10 - There's Always Tomorrow, Baby"></option>
+			<option value="S1E11 - I'm Never Remembering You, Baby"></option>
+			<option value="S1E12 - Nobody Knows the Chameleon Alien, Baby"></option>
+			<option value="S1E13 - Even Vacuum Cleaners Fall in Love, Baby"></option>
+			<option value="S2E1 - I Can't Be the Only One, Baby"></option>
+			<option value="S2E2 - There's Music in the Darkness, Baby"></option>
+			<option value="S2E3 - Slow and Steady Wins the Race, Baby"></option>
+			<option value="S2E4 - The Transfer Student is Dandy, Baby"></option>
+			<option value="S2E5 - The Big Fish is Huge, Baby"></option>
+			<option value="S2E6 - The Gallant Space Gentleman, Baby"></option>
+			<option value="S2E7 - Rock 'n' Roll Dandy, Baby"></option>
+			<option value="S2E8 - A World with No Sadness, Baby"></option>
+			<option value="S2E9 - We're All Fools, So Let's All Dance, Baby"></option>
+			<option value="S2E10 - Lovers are Trendy, Baby"></option>
+			<option value="S2E11 - An Other-Dimensional Tale, Baby"></option>
+			<option value="S2E12 - Dandy's Day in Court, Baby"></option>
+			<option value="S2E13 - The Neverending Dandy, Baby"></option>
+			<option value="Picture Drama 1 - Booby Pair's Great Adventure"></option>
+			<option
+				value="Picture Drama 2 - It's a Launderette of Hell, Baby"
+			></option>
+			<option value="Picture Drama 3 - Cheerful Wake Me Up, Baby"></option>
+			<option
+				value="Picture Drama 4 - The Road to Debut is Harsh, Baby"
+			></option>
+			<option value="Picture Drama 5 - Let's Take a Bath Again, Baby!"></option>
+		</datalist>
+		<div>
+			<button
+				id="submit"
+				style="width: 7vw; height: 2vw; font-size: 1.2vw"
+				onclick="checkResult()"
+			>
+				Submit
+			</button>
+			<button id="tryAgain" onclick="tryAgain()">Try Again</button>
+		</div>
+		<br />
+		<p id="score">Score: 0</p>
+		<p id="highscore">Highscore: 0</p>
 	</body>
 </html>
