@@ -125,4 +125,4 @@ function tryAgain() {
 window.onload = refreshArray;
 window.onload = shuffleArray;
 window.onload = printArray;
-window.onload = console.log("It's not cool to cheat, baby.")
+window.onload = console.log("It's not cool to cheat, baby.");
