@@ -64,7 +64,6 @@ function shuffleArray() {
 
 function printArray() {
 	if (frames === undefined || frames.length == 0) {
-		console.log("you win!");
 			document.getElementById("guess").style="display: none;"
 			document.getElementById("submit").style="display: none;"
 			document.getElementById("label").style="display: none;"
@@ -75,8 +74,6 @@ function printArray() {
 		return
 }
 	currentFrame = frames.pop();
-    console.log(currentFrame);
-	console.log(currentFrame.episode);
 	document.getElementById("output").textContent = currentFrame.id
 	document.getElementById("imageOutput").src = "frames\\" + currentFrame.file
 }
@@ -90,9 +87,7 @@ var highscore = 0
 
 function checkResult() {
 	var guess = document.getElementById("guess").value.trim();
-	console.log(guess)
 	if (guess == currentFrame.episode) {
-		console.log("Correct!");
 		printArray();
 		document.getElementById("guess").value = ""
 		score = score + 1
@@ -104,7 +99,6 @@ function checkResult() {
 		}
 		return
 	} else
-		console.log("Wrong!");
 		document.getElementById("output").style="display:block"
 		document.getElementById("output").textContent="Not quite. The episode was " + currentFrame.episode 
 		document.getElementById("submit").style="display: none;"
@@ -114,7 +108,6 @@ function checkResult() {
 }
 
 function tryAgain() {
-	console.log("bradar")
 	score = 0
 	document.getElementById("score").textContent = "Score: " + score
 	document.getElementById("output").style="display:none"
@@ -132,3 +125,4 @@ function tryAgain() {
 window.onload = refreshArray;
 window.onload = shuffleArray;
 window.onload = printArray;
+window.onload = console.log("It's not cool to cheat, baby."")
